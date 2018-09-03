@@ -250,3 +250,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Enable backpressure for GL comp
 PRODUCT_PROPERTY_OVERRIDES += \
 	debug.sf.enable_gl_backpressure=1
+	
+# Google Assistant
+ro.opa.eligible_device=true
