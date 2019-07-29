@@ -181,6 +181,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.camera.notify_nfc=1 \
     ro.hardware.nfc_nci=nqx.default \
     ro.vendor.nfc.notify_tp=1
+	
+# PASR
+vendor.power.pasr.enabled=true
 
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
