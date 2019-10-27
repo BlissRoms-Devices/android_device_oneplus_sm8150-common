@@ -171,9 +171,10 @@ TARGET_USERIMAGES_USE_F2FS := true
 ENABLE_VENDOR_RIL_SERVICE := true
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 TARGET_RIL_VARIANT := caf
+TARGET_USES_PRE_UPLINK_FEATURES_NETMGRD := true
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2019-09-05
+VENDOR_SECURITY_PATCH := 2019-10-01
 
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
@@ -181,6 +182,9 @@ include device/qcom/sepolicy/sepolicy.mk
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(VENDOR_PATH)/sepolicy/private
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(VENDOR_PATH)/sepolicy/public
 BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy/vendor
+
+# Compile libhwui in performance mode
+HWUI_COMPILE_FOR_PERF := true
 
 # Sensors
 SOONG_CONFIG_NAMESPACES += ONEPLUS_MSMNILE_SENSORS
