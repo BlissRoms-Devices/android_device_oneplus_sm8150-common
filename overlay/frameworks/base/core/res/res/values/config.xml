@@ -468,10 +468,6 @@
     <!-- The CPU temperature divider, if needed -->
     <integer name="config_cpuTempDivider" translatable="false">1000</integer>
 
-    <!-- The default peak refresh rate for a given device. Change this value if you want to allow
-         for higher refresh rates to be automatically used out of the box -->
-    <integer name="config_defaultPeakRefreshRate">90</integer>
-
     <!-- Whether the device supports Smart Pixels -->
     <bool name="config_supportSmartPixels">true</bool>
 
@@ -483,5 +479,8 @@
         <item>1</item>
         <item>2</item>
     </integer-array>
+
+    <!-- Whether device supports variable refresh rate -->
+    <bool name="config_hasVariableRefreshRate">true</bool>
 
 </resources>
