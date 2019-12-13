@@ -589,7 +589,7 @@ vendor/lib64/vendor.display.color@1.2.so
 vendor/lib64/vendor.display.postproc@1.0.so
 
 # Dolby
--app/OPSoundTuner/OPSoundTuner.apk|09e66ce97f925f98acaaed68e09f27362e79a061
+-app/OPSoundTuner/OPSoundTuner.apk|4c3c86a7a2984165c76b687c7582eebe8ba109cc
 etc/permissions/com.dolby.daxservice.xml
 -priv-app/daxService/daxService.apk
 
