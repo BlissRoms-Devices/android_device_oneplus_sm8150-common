@@ -481,4 +481,7 @@
     <bool name="config_dozePulsePickup">true</bool>
     <bool name="config_dozePulseTilt">true</bool>
     <bool name="config_dozePulseProximity">true</bool>
+
+    <!-- Enable dual LTE capability support-->
+    <bool name="config_dual_LTE_capability">true</bool>
 </resources>
