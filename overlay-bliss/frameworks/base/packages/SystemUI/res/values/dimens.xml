@@ -21,4 +21,7 @@
      for different hardware and product builds. -->
 <resources>
   <dimen name="tri_state_dialog_elevation">3.0dip</dimen>
+
+    <!-- OmniWeather image size -->
+    <dimen name="current_weather_image_size">42dp</dimen>
 </resources>
