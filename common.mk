@@ -390,10 +390,6 @@ PRODUCT_PACKAGES += \
     rcs_service_api \
     rcs_service_api.xml
 
-# Recorder
-PRODUCT_PACKAGES += \
-    Recorder
-
 # RIL
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.2 \
