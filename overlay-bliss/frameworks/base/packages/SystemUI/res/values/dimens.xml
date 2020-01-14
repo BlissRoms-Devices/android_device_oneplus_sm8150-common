@@ -22,6 +22,9 @@
 <resources>
   <dimen name="tri_state_dialog_elevation">3.0dip</dimen>
 
+    <!-- the padding on the start and the end of the statusbar -->
+    <dimen name="status_bar_extra_padding">6dp</dimen>
+
     <!-- OmniWeather image size -->
     <dimen name="current_weather_image_size">42dp</dimen>
 
