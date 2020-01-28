@@ -48,4 +48,7 @@
     <!-- Enable dual LTE capability support-->
     <bool name="config_dual_LTE_capability">true</bool>
 
+    <!-- Radius of the software rounded corners. -->
+    <dimen name="rounded_corner_radius">140px</dimen>
+
 </resources>

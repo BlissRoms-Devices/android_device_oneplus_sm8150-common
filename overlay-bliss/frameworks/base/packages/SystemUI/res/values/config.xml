@@ -24,4 +24,7 @@
          increase the rate of unintentional unlocks. -->
     <bool name="config_lockscreenAntiFalsingClassifierEnabled">false</bool>
 
+    <!-- Allow devices to use unordinary cutout overlays -->
+    <bool name="config_customCutout">true</bool>
+
 </resources>
