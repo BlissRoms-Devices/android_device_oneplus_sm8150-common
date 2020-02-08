@@ -23,6 +23,13 @@ import android.content.res.Resources;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import androidx.preference.PreferenceFragment;
+import androidx.preference.ListPreference;
+import androidx.preference.Preference;
+import androidx.preference.PreferenceCategory;
+import androidx.preference.PreferenceManager;
+import androidx.preference.PreferenceScreen;
+import androidx.preference.TwoStatePreference;
 import android.provider.Settings;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
@@ -35,15 +42,6 @@ import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.util.Log;
-import androidx.preference.PreferenceFragment;
-import androidx.preference.ListPreference;
-import androidx.preference.Preference;
-import androidx.preference.PreferenceCategory;
-import androidx.preference.PreferenceManager;
-import androidx.preference.PreferenceScreen;
-import androidx.preference.TwoStatePreference;
-
-import com.android.internal.util.aosip.FileUtils;
 
 public class PanelSettings extends PreferenceFragment implements RadioGroup.OnCheckedChangeListener {
     private RadioGroup mRadioGroup;
@@ -53,9 +51,7 @@ public class PanelSettings extends PreferenceFragment implements RadioGroup.OnCh
         super.onViewCreated(view, savedInstanceState);
         mRadioGroup = (RadioGroup) view.findViewById(R.id.radio_group);
         int checkedButtonId = R.id.off_mode;
-        if (NightModeSwitch.isCurrentlyEnabled(getContext())) {
-            checkedButtonId = R.id.night_mode;
-        } else if (DCIModeSwitch.isCurrentlyEnabled(getContext())) {
+        if (DCIModeSwitch.isCurrentlyEnabled(getContext())) {
             checkedButtonId = R.id.dci_mode;
         } else if (SRGBModeSwitch.isCurrentlyEnabled(getContext())) {
             checkedButtonId = R.id.srgb_mode;
@@ -81,50 +77,33 @@ public class PanelSettings extends PreferenceFragment implements RadioGroup.OnCh
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(getContext());
         SharedPreferences.Editor edit = sharedPrefs.edit();
         if (checkedId == R.id.srgb_mode) {
-            Utils.writeValue(DCIModeSwitch.getFile(), "0");
-            edit.putBoolean(DeviceSettings.KEY_DCI_SWITCH, false);
-            Utils.writeValue(NightModeSwitch.getFile(), "0");
-            edit.putBoolean(DeviceSettings.KEY_NIGHT_SWITCH, false);
-            Utils.writeValue(WideColorModeSwitch.getFile(), "0");
-            edit.putBoolean(DeviceSettings.KEY_WIDECOLOR_SWITCH, false);
             Utils.writeValue(SRGBModeSwitch.getFile(), "1");
             edit.putBoolean(DeviceSettings.KEY_SRGB_SWITCH, true);
-        } else if (checkedId == R.id.dci_mode) {
-            Utils.writeValue(SRGBModeSwitch.getFile(), "0");
-            edit.putBoolean(DeviceSettings.KEY_SRGB_SWITCH, false);
-            Utils.writeValue(NightModeSwitch.getFile(), "0");
-            edit.putBoolean(DeviceSettings.KEY_NIGHT_SWITCH, false);
+            Utils.writeValue(DCIModeSwitch.getFile(), "0");
+            edit.putBoolean(DeviceSettings.KEY_DCI_SWITCH, false);
             Utils.writeValue(WideColorModeSwitch.getFile(), "0");
             edit.putBoolean(DeviceSettings.KEY_WIDECOLOR_SWITCH, false);
+        } else if (checkedId == R.id.dci_mode) {
             Utils.writeValue(DCIModeSwitch.getFile(), "1");
             edit.putBoolean(DeviceSettings.KEY_DCI_SWITCH, true);
-        } else if (checkedId == R.id.night_mode) {
             Utils.writeValue(SRGBModeSwitch.getFile(), "0");
             edit.putBoolean(DeviceSettings.KEY_SRGB_SWITCH, false);
-            Utils.writeValue(DCIModeSwitch.getFile(), "0");
-            edit.putBoolean(DeviceSettings.KEY_DCI_SWITCH, false);
             Utils.writeValue(WideColorModeSwitch.getFile(), "0");
             edit.putBoolean(DeviceSettings.KEY_WIDECOLOR_SWITCH, false);
-            Utils.writeValue(NightModeSwitch.getFile(), "1");
-            edit.putBoolean(DeviceSettings.KEY_NIGHT_SWITCH, true);
         } else if (checkedId == R.id.off_mode) {
-            Utils.writeValue(DCIModeSwitch.getFile(), "0");
-            edit.putBoolean(DeviceSettings.KEY_DCI_SWITCH, false);
-            Utils.writeValue(NightModeSwitch.getFile(), "0");
-            edit.putBoolean(DeviceSettings.KEY_NIGHT_SWITCH, false);
             Utils.writeValue(SRGBModeSwitch.getFile(), "0");
             edit.putBoolean(DeviceSettings.KEY_SRGB_SWITCH, false);
+            Utils.writeValue(DCIModeSwitch.getFile(), "0");
+            edit.putBoolean(DeviceSettings.KEY_DCI_SWITCH, false);
             Utils.writeValue(WideColorModeSwitch.getFile(), "0");
             edit.putBoolean(DeviceSettings.KEY_WIDECOLOR_SWITCH, false);
         } else if (checkedId == R.id.wide_color_mode) {
-            Utils.writeValue(DCIModeSwitch.getFile(), "0");
-            edit.putBoolean(DeviceSettings.KEY_DCI_SWITCH, false);
-            Utils.writeValue(NightModeSwitch.getFile(), "0");
-            edit.putBoolean(DeviceSettings.KEY_NIGHT_SWITCH, false);
-            Utils.writeValue(SRGBModeSwitch.getFile(), "0");
-            edit.putBoolean(DeviceSettings.KEY_SRGB_SWITCH, false);
             Utils.writeValue(WideColorModeSwitch.getFile(), "1");
             edit.putBoolean(DeviceSettings.KEY_WIDECOLOR_SWITCH, true);
+            Utils.writeValue(DCIModeSwitch.getFile(), "0");
+            edit.putBoolean(DeviceSettings.KEY_DCI_SWITCH, false);
+            Utils.writeValue(SRGBModeSwitch.getFile(), "0");
+            edit.putBoolean(DeviceSettings.KEY_SRGB_SWITCH, false);
         }
         edit.commit();
     }
