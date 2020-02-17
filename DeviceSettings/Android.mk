@@ -28,8 +28,7 @@ LOCAL_USE_AAPT2 := true
 
 LOCAL_STATIC_ANDROID_LIBRARIES := \
     androidx.core_core \
-    androidx.preference_preference \
-    VendorSupport-preference
+    androidx.preference_preference
 
 LOCAL_RESOURCE_DIR := \
     $(LOCAL_PATH)/res \
@@ -49,4 +48,5 @@ LOCAL_RESOURCE_DIR := $(package_resource_overlays) $(LOCAL_RESOURCE_DIR)
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 LOCAL_MODULE_TAGS := optional
 include frameworks/base/packages/SettingsLib/common.mk
+include vendor/support/common.mk
 include $(BUILD_PACKAGE)
