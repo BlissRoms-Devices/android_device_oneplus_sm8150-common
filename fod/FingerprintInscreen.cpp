@@ -35,8 +35,7 @@
 
 // This is not a typo by me. It's by OnePlus.
 #define HBM_ENABLE_PATH "/sys/class/drm/card0-DSI-1/op_friginer_print_hbm"
-#define DIM_AMOUNT_PATH "/sys/class/drm/card0-DSI-1/fod_dim_alpha"
-#define HBM_PATH "/sys/class/drm/card0-DSI-1/hbm"
+#define DIM_AMOUNT_PATH "/sys/class/drm/card0-DSI-1/dim_alpha"
 
 namespace vendor {
 namespace lineage {
@@ -157,10 +156,6 @@ Return<void> FingerprintInscreen::setLongPressEnabled(bool enabled) {
 
 Return<int32_t> FingerprintInscreen::getDimAmount(int32_t) {
     int dimAmount = get(DIM_AMOUNT_PATH, 0);
-    int hbmMode = get(HBM_PATH, 0);
-    if (hbmMode == 5) {
-        dimAmount = 42;
-    }
     LOG(INFO) << "dimAmount = " << dimAmount;
 
     return dimAmount;
