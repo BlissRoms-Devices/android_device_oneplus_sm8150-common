@@ -10,7 +10,23 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen 
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:lineage="http://schemas.android.com/apk/res/lineageos.platform">
+
+    <org.lineageos.internal.lineageparts.LineagePartsPreference
+        android:key="touchscreen_gesture_settings"
+        lineage:requiresFeature="lineagehardware:FEATURE_TOUCHSCREEN_GESTURES" />
+
+    <lineageos.preference.RemotePreference
+            android:key="device_touchscreen_gesture_settings"
+            android:title="@string/touchscreen_gesture_settings_title"
+            android:summary="@string/touchscreen_gesture_settings_summary"
+            lineage:replacesKey="touchscreen_gesture_settings"
+            lineage:requiresFeature="lineagehardware:FEATURE_TOUCHSCREEN_GESTURES">
+        <intent android:action="org.lineageos.settings.device.GESTURE_SETTINGS" />
+    </lineageos.preference.RemotePreference>
+
     <PreferenceCategory
         android:key="graphics"
         android:title="@string/display_title">
