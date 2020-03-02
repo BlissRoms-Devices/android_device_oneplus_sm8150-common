@@ -60,4 +60,7 @@
     <!-- Screen off delay -->
     <integer name="config_screen_off_delay">0</integer>
 
+    <!-- Whether key handler sends intent when changing slider position -->
+    <string name="config_alertSliderIntent">com.aosip.device.DeviceSettings.UPDATE_SLIDER_POSITION</string>
+
 </resources>
