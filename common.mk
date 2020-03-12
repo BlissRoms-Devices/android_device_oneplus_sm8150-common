@@ -24,6 +24,8 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
 
+EXTRA_FOD_ANIMATIONS := true
+
 # A/B
 AB_OTA_UPDATER := true
 
