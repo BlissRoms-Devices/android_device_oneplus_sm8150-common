@@ -508,11 +508,6 @@
     <!-- Enable dual LTE capability support-->
     <bool name="config_dual_LTE_capability">true</bool>
 
-    <!-- Oneplus uses a proprietary vibrator hal to utilize the new powerful motor since the
-    OP7Pro. This HAL expects a different format for the data instead of the usual (ms)
-    timing(the duration which the vibrator is expected to vibrate for) -->
-    <bool name="config_hasOneplusHapticMotor">true</bool>
-
     <!-- Radius of the software rounded corners. -->
     <dimen name="rounded_corner_radius">140px</dimen>
 
