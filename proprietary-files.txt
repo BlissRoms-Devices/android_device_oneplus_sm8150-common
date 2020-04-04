@@ -935,15 +935,6 @@ vendor/lib64/liblistensoundmodel2.so
 vendor/lib64/libmulawdec.so
 vendor/lib64/libjnihelper.so
 
-# Machine learning
-vendor/lib/libnpu.so
-vendor/lib/libopenvx.so
-vendor/lib64/hw/vendor.qti.hardware.mlshal@1.0-impl.so
-vendor/lib64/libnpu.so
-vendor/lib64/libopenvx.so
-vendor/lib64/vendor.qti.hardware.mlshal@1.0-halimpl.so
-vendor/lib64/vendor.qti.hardware.mlshal@1.0.so
-
 # Media
 lib/libFileMux.so
 lib/libmmosal.so
