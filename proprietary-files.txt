@@ -1101,7 +1101,9 @@ vendor/bin/hw/vendor.qti.power.pasrmanager@1.0-service
 vendor/bin/msm_irqbalance
 vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc
 vendor/etc/init/vendor.qti.power.pasrmanager@1.0-service.rc
+vendor/etc/lm/AdaptLaunchFeature.xml
 vendor/etc/lm/AppClassifierFeature.xml
+vendor/etc/lm/GameOptimizationFeature.xml
 vendor/etc/perf/commonresourceconfigs.xml
 vendor/etc/perf/perfboostsconfig.xml
 vendor/etc/perf/perfconfigstore.xml
