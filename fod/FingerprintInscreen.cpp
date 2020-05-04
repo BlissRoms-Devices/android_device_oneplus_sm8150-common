@@ -37,6 +37,7 @@
 #define HBM_ENABLE_PATH "/sys/class/drm/card0-DSI-1/op_friginer_print_hbm"
 #define DIM_AMOUNT_PATH "/sys/class/drm/card0-DSI-1/dim_alpha"
 #define DC_DIMMING_PATH "/sys/class/drm/card0-DSI-1/dimlayer_bl_en"
+#define BRIGHTNESS_PATH "/sys/devices/platform/soc/soc:qcom,dsi-display-primary/backlight_level"
 
 namespace vendor {
 namespace lineage {
