@@ -527,6 +527,9 @@
          0: Left side
          1: Right side -->
     <integer name="config_alertSliderLocation">1</integer>
+    
+    <!-- Whether to use in-built Screen Record service -->
+    <bool name="config_showScreenRecord">true</bool>
 
     <!-- Whether key handler sends intent when changing slider position -->
     <string name="config_alertSliderIntent">org.lineageos.device.DeviceSettings.UPDATE_SLIDER_POSITION</string>
