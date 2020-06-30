@@ -447,5 +447,8 @@
          0: Left side
          1: Right side -->  
     <integer name="config_alertSliderLocation">1</integer>
+    
+    <!-- Whether to use in-built Screen Record service -->
+    <bool name="config_showScreenRecord">true</bool>
 
 </resources>
