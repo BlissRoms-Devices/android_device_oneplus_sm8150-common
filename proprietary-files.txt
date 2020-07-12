@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from OnePlus7ProOxygen_21.P.26_OTA_026_all_2003222032_6893aca031668
+# All unpinned blobs below are extracted from OnePlus7ProOxygen_21.P.27_OTA_027_all_2005192132_e3185c1907734508
 
 # ADSP
 vendor/bin/adsprpcd
@@ -1548,6 +1548,10 @@ vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
 vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
+
+# Translation
+vendor/lib/vendor.oneplus.hardware.translation@1.0.so
+vendor/lib64/vendor.oneplus.hardware.translation@1.0.so
 
 # Vibrator firmware
 vendor/firmware/alarm_breeze.bin
