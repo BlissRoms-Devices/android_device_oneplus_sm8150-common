@@ -62,6 +62,7 @@
     <string name="vib_notif_strength_title_head">Notification Strength</string>
     <string name="vib_notif_strength_summary_head">Define the strength of the vibrator during an incoming notification</string>
 
+    <!-- Dolby Atmos -->
     <string name="audio_title">Dolby Atmos</string>
     <string name="dolby_title">Configuration</string>
     <string name="dolby_summary">Configure the audio output based on media content.</string>
