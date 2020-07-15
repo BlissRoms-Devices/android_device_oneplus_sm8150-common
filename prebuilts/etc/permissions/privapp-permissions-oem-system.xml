@@ -2,11 +2,12 @@
 <permissions>
     <privapp-permissions package="com.dolby.daxservice">
         <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+    </privapp-permissions>
 		
     <privapp-permissions package="com.oneplus.camera">
         <permission name="android.permission.INTERACT_ACROSS_USERS"/>
         <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
-	</privapp-permissions>
+    </privapp-permissions>
 
     <privapp-permissions package="com.oneplus.gallery">
         <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
