@@ -450,7 +450,7 @@
 	
     <!-- Whether device supports variable refresh rate -->
     <bool name="config_hasVariableRefreshRate">true</bool>
-    <integer name="config_defaultVariableRefreshRateSetting">0</integer>	
+    <integer name="config_defaultVariableRefreshRateSetting">2</integer>	
     
     <!-- Whether to use in-built Screen Record service -->
     <bool name="config_showScreenRecord">true</bool>
