@@ -24,12 +24,9 @@
     -->
     <integer name="config_fingerprintSensorLocation">1</integer>
 	
-    <!-- Battery Health Overlay -->
-    <bool name="config_supportBatteryHealth">true</bool>
-
-    <!-- Battery Health Strings -->
+    <!-- Battery Health -->
+    <bool name="config_supportBatteryHealth">false</bool>
+    <string name="config_batChargeCycle">/sys/class/power_supply/bms/charge_counter</string>
     <string name="config_batDesCap">/sys/class/power_supply/bms/charge_full</string>
     <string name="config_batCurCap">/sys/class/power_supply/bms/charge_now_raw</string>
-    <string name="config_batChargeCycle">/sys/class/power_supply/bms/cycle_count</string>
-
 </resources>
