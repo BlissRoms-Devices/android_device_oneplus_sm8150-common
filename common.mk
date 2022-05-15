@@ -249,7 +249,8 @@ PRODUCT_PACKAGES += \
     OPlusFrameworksResCommon \
     OPlusSettingsResCommon \
     OPlusSystemUIResCommon \
-    OPlusExtrasResCommon
+    OPlusExtrasResCommon \
+    SimpleDeviceConfigCommon
 
 # Partitions
 PRODUCT_PACKAGES += \
