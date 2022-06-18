@@ -13,3 +13,8 @@ allow system_app sysfs_motor:dir search;
 allow system_app sysfs_motor:file write;
 allow system_app sysfs_motor:file open;
 allow system_app sysfs_motor:file getattr;
+
+allow system_app vendor_sysfs_graphics:file write;
+allow system_app vendor_sysfs_graphics:file read;
+allow system_app vendor_sysfs_graphics:file open;
+allow system_app vendor_sysfs_graphics:file getattr;
