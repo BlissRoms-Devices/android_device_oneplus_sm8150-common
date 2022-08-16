@@ -1,0 +1,2 @@
+# Camera
+allow system_app sysfs_leds:dir search;
