@@ -27,7 +27,7 @@
     <bool name="config_deviceSupportsFPS">true</bool>
 
     <!-- Whether device supports Touch Screen Gestures -->
-    <bool name="config_deviceSupportsTouchScreenGestures">true</bool>
+    <bool name="config_deviceSupportsTouchScreenGestures">false</bool>
 
     <!-- Whether to show Jitter Test -->
     <bool name="config_deviceSupportsJitterTest">true</bool>
