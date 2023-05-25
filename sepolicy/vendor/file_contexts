@@ -4,7 +4,6 @@
 /(odm|vendor/odm)/lib/rfsa/adsp/libc\+\+\.so\.1                                              u:object_r:same_process_hal_file:s0
 /(odm|vendor/odm)/lib/rfsa/adsp/libc\+\+\.so                                                 u:object_r:same_process_hal_file:s0
 /(odm|vendor/odm)/lib64/hta_lib/libhta_hexagon_runtime\.so                                   u:object_r:same_process_hal_file:s0
-/(odm|vendor/odm)/lib64/libfastov_dsp\.so                                                    u:object_r:same_process_hal_file:s0
 /(vendor|system/vendor)/lib/rfsa/adsp/libBeautyShot_skel\.so                                 u:object_r:same_process_hal_file:s0
 /(vendor|system/vendor)/lib/rfsa/adsp/libMFSR_FRT_skel\.so                                   u:object_r:same_process_hal_file:s0
 /(vendor|system/vendor)/lib/rfsa/adsp/libVDHexagonBlurless_v2_skel\.so                       u:object_r:same_process_hal_file:s0
@@ -97,8 +96,6 @@
 /(vendor|system/vendor)/lib64/libsymphonypower\.so                                           u:object_r:same_process_hal_file:s0
 /(vendor|system/vendor)/lib64/libtriplecam_image_optical_zoom\.so                            u:object_r:same_process_hal_file:s0
 /(vendor|system/vendor)/lib64/libyuv2\.so                                                    u:object_r:same_process_hal_file:s0
-/(vendor|system/vendor)/lib64/vendor\.qti\.hardware\.camera\.postproc@1\.0-service-impl\.so  u:object_r:same_process_hal_file:s0
-/(vendor|system/vendor)/lib64/vendor\.qti\.hardware\.camera\.postproc@1\.0\.so               u:object_r:same_process_hal_file:s0
 
 # Display
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.livedisplay@2\.1-service\.oneplus_msmnile    u:object_r:hal_lineage_livedisplay_qti_exec:s0
