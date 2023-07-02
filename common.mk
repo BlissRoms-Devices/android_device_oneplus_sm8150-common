@@ -471,7 +471,7 @@ PRODUCT_BOOT_JARS += \
     WfdCommon
 
 # Inherit from the OnePlus Camera makefile.
-$(call inherit-product, vendor/oneplus/sm8150-apps/camera-vendor.mk)
+$(call inherit-product, vendor/oneplus/camera/camera-vendor.mk)
 
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/oneplus/sm8150-common/sm8150-common-vendor.mk)
